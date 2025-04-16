@@ -1,19 +1,19 @@
 /* table for keeping track of users who visit ecommerce site */
 CREATE TABLE User {
-    PRIMARY KEY userID = int;
-    userName = varchar(50);
-    userAddress = varchar(99);
+    userID PRIMARY KEY NOT NULL;
+    userName VARCHAR NOT NULL;
+    userAddress VARCHAR NOT NULL;
 }
 /* table for orders that are made by the users */
 CREATE TABLE Order {
-    FOREIGN KEY orderID = int;
-    orderQuantity = int;
-    orderPrice = float;
-    orderAddress = varchar(99);
+    orderID INT FOREIGN KEY NOT NULL;
+    orderQuantity INT NOT NULL;
+    orderPrice FLOAT(10, 2) NOT NULL;
+    orderAddress VARCHAR NOT NULL;
 }
 /* table for payments made by the users for their order */
 CREATE TABLE Payment {
-    paymentID = int;
-    paymentMethod = text(50);
-    paymentStatus = boolean;
+    paymentID INT FOREIGN KEY;
+    paymentMethod TEXT;
+    paymentStatus BOOLEAN;
 }
