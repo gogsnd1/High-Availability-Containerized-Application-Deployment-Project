@@ -1,6 +1,55 @@
 <!DOCTYPE html>
-<html>
-  <body style="text-align:center;padding:100px;">
-    <h1>Riddle App Coming Soon!</h1>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riddle Me This...</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: black;
+            text-align: center;
+            color: white;
+        }
+        .banner{
+            width: 100%;
+            background-color: white;
+            text-align: center;
+            color: blue;
+            padding: 20px 0;
+        }
+        .riddle{
+            text-align: center;
+            color: white;
+        }
+      
+        
+    </style>
+    <section class="background"></section>
+    <section class="banner">
+        <h1 text-align:center>Welcome to the Riddle Me This!</h1>
+    </section>
+    <h2>Venture a guess to the riddle or reload for a new one...</h2>
+    <div style="text-align: center;">
+    <img id="thinker" src="thinker.jpg" alt="Man thinking with sunset in background" height="400">
+    </div>
+    
+        <section class="riddle">
+        <h3 id="riddle-text">Loading riddle...</h3>
+        <input type="text" placeholder="Your Guess">
+        <br><br>
+        <button onclick="some_func()">Submit</button>
+    </section>
+    <script>
+        async function some_func() {
+            const res = await fetch('http://34.29.139.253/:9000/riddle');
+            const data = await res.json();
+            document.getElementById("riddle-text").innerText = data.question;
+            console.log("Answers:", data.answers); // You’ll use this later
+        }
+
+        window.onload = some_func;
+    </script>
+</body>
 </html>
