@@ -1,0 +1,184 @@
+1
+Q: What can’t talk but will reply when spoken to?
+A: Echo
+D: Medium
+
+2
+Q: The more you take, the more you leave behind. What am I?
+A: Footsteps
+D: Hard
+
+3
+Q: What has to be broken before you can use it?
+A: Egg
+D: Easy
+
+4
+Q: I’m tall when I’m young, and I’m short when I’m old. What am I?
+A: Candle
+D: Medium
+
+5
+Q: What is full of holes but still holds water?
+A: Sponge
+D: Easy
+
+6
+Q: What can run but never walks, has a bed but never sleeps, and has a mouth but never talks?
+A: River
+D: Hard
+
+7
+Q: What comes once in a minute, twice in a moment, but never in a thousand years?
+A: M
+D: Medium
+
+8
+Q: I have cities, but no houses. I have mountains, but no trees. I have water, but no fish. What am I?
+A: Map
+D: Medium
+
+9
+Q: The more you take away from me, the bigger I get. What am I?
+A: Hole
+D: Medium
+
+10
+Q: What has hands but can’t clap?
+A: Clock
+D: Easy
+
+11
+Q: What gets wetter the more it dries?
+A: Towel
+D: Medium
+
+12
+Q: I go up but never down. What am I?
+A: Age
+D: Easy
+
+13
+Q: What kind of room has no doors, furniture, or windows?
+A: Mushroom
+D: Hard
+
+14
+Q: I’m not alive, but I grow. I don’t have lungs, but I need air. What am I?
+A: Fire
+D: Medium
+
+15
+Q: You can catch me, but you can’t throw me. What am I?
+A: Cold
+D: Easy
+
+16
+Q: I shrink smaller every time I take a bath. What am I?
+A: Soap
+D: Easy
+
+17
+Q: I’m light as a feather, but even the world’s strongest man can’t hold me for long. What am I?
+A: Breath
+D: Medium
+
+18
+Q: I have keys but no locks. I have space but no room. You can enter but not go outside. What am I?
+A: Keyboard
+D: Hard
+
+19
+Q: Where does today come before yesterday?
+A: Dictionary
+D: Medium
+
+20
+Q: What goes up and down but doesn’t move?
+A: Staircase
+D: Hard
+
+21
+Q: What can travel all around the world without leaving its corner?
+A: Stamp
+D: Medium
+
+22
+Q: What has a thumb and four fingers, but is not a hand?
+A: Glove
+D: Easy
+
+23
+Q: What has a head and a tail but no body?
+A: Coin
+D: Medium
+
+24
+Q: Forward I am heavy, but backward I am not. What am I?
+A: Ton
+D: Medium
+
+25
+Q: What begins with an "e" and only contains one letter?
+A: Envelope
+D: Easy
+
+26
+Q: What goes through cities and fields, but never moves?
+A: Road
+D: Medium
+
+27
+Q: What does man love more than life, hate more than death or mortal strife; that which contented men desire; the poor have, the rich require; the miser spends, the spendthrift saves, and all men carry to their graves?
+A: Nothing
+D: Easy
+
+28
+Q: The person who makes it has no need of it; the person who buys it has no use for it. The person who uses it can neither see nor feel it. What is it?
+A: Coffin
+D: Hard
+
+29
+Q: What can fill a room but takes up no space?
+A: Light
+D: Easy
+
+30
+Q: If you drop me I’m sure to crack, but give me a smile and I’ll always smile back. What am I?
+A: Mirror
+D: Medium
+
+31
+Q: What kind of coat is best put on wet?
+A: Paint
+D: Easy
+
+32
+Q: What has a bottom at the top?
+A: Legs
+D: Hard
+
+33
+Q: What has lots of eyes, but can’t see?
+A: Potato
+D: Medium
+
+34
+Q: What loses its head in the morning but gets it back at night?
+A: Pillow
+D: Hard
+
+35
+Q: What is it that no one wants to have, but no one wants to lose either?
+A: Lawsuit
+D: Hard
+
+36
+Q: I make a loud sound when I’m changing. When I do change, I get bigger but weigh less. What am I?
+A: Popcorn
+D: Medium
+
+37
+Q: What is always on its way but never arrives?
+A: Tomorrow
+D: Medium
