@@ -2,24 +2,20 @@ version: '3.8'
 
 services:
   frontend:
-    image: riddle-frontend:latest
+    build: ./frontend
     ports:
       - "8000:80"
     deploy:
       replicas: 3
       restart_policy:
         condition: on-failure
-
   backend:
-    image: riddle-backend:latest
+    build: ./backend
     ports:
       - "9000:5000"
     depends_on:
       - db
-    deploy:
-      replicas: 2
-      restart_policy:
-        condition: on-failure
+    restart: unless-stopped
 
   db:
     image: mysql:8.0

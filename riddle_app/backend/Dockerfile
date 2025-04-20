@@ -1,5 +1,14 @@
-FROM python:3.9-slim
+# Use an official Python image
+FROM python:3.10-slim
+
+# Set working directory
 WORKDIR /app
-COPY app.py .
+
+# Copy backend code
+COPY . .
+
+# Install dependencies
 RUN pip install flask
+
+# Run the app
 CMD ["python", "app.py"]
