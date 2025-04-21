@@ -3,36 +3,65 @@ version: '3.8'
 services:
   frontend:
     image: riddle-frontend:latest
-    ports:
-      - "8000:80"
     deploy:
       replicas: 3
       restart_policy:
         condition: on-failure
+    networks:
+      - frontend-network
+    environment:
+      - VIRTUAL_HOST=localhost
+    volumes:
+      - ./static:/usr/share/nginx/html/static
 
   backend:
     image: riddle-backend:latest
-    ports:
-      - "9000:5000"
-    depends_on:
-      - db
     deploy:
       replicas: 2
       restart_policy:
         condition: on-failure
+    build:
+      context: ./backend
+    depends_on:
+      - db
+    networks:
+      - frontend-network
+      - backend-network
 
   db:
-    image: mysql:8.0
+    image: postgres:14
     environment:
-      MYSQL_ROOT_PASSWORD: rootpass
-      MYSQL_DATABASE: riddles
-      MYSQL_USER: riddleuser
-      MYSQL_PASSWORD: riddlepass
-    ports:
-      - "3000:5000"
+      POSTGRES_DB: riddles
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 1234
+   # ports:
+   #   - "5432:5432"
     volumes:
-      - db_data:/var/lib/mysql
+      - db_data:/var/lib/postgresql/data
+      - ./riddlerDB_dump.sql:/docker-entrypoint-initdb.d/riddlerDB_dump.sql
+    networks:
+      - backend-network
     restart: unless-stopped
+
+  nginx:
+    image: nginx:latest
+    container_name: riddle-nginx
+    ports:
+      - "8080:8080"
+    networks:
+      - frontend-network
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+    depends_on:
+      - frontend
 
 volumes:
   db_data:
+
+networks:
+  frontend-network:
+    external: true
+    name: riddle_app_default
+  backend-network:
+    driver: overlay
+    attachable: true
