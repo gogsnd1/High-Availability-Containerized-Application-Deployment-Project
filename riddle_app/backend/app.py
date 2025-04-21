@@ -8,7 +8,7 @@ DB_CONFIG = {
     "dbname": "riddlerdb",
     "user": "postgres",
     "password": "1234",
-    "host": "db",
+    "host": "localhost",
     "port": 5432
 }
 
