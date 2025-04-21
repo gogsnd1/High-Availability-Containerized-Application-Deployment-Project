@@ -5,7 +5,7 @@ import random
 app = Flask(__name__)
 
 DB_CONFIG = {
-    "dbname": "riddles",
+    "dbname": "riddlerdb",
     "user": "postgres",
     "password": "1234",
     "host": "db",
@@ -21,7 +21,7 @@ def get_riddle():
         # Get a random question
         cursor.execute('''
             SELECT q.questionID, q.question
-            FROM Question q
+            FROM question q
             ORDER BY RANDOM()
             LIMIT 1
         ''')
